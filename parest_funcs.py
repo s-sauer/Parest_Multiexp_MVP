@@ -54,7 +54,7 @@ def residuals_all_exp(p, y0_dict, c_dict, datasets_dict):
 
       for exp in exp_names: # loop over experiments
             y0 = y0_dict[exp]
-            c = y0_dict[exp]
+            c = c_dict[exp]
             datasets = datasets_dict[exp]
 
             res_this_exp = residuals_single_exp(p, c, y0, datasets)
